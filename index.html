@@ -7,6 +7,8 @@
       content="NaTYCG0NPe5c6REvWvwaj7WVdMV00oQ0wLUYeLOl7_U"
     />
 
+    <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -581,18 +583,22 @@ margin-right: auto;
     </section>
 
     <script>
-  function copyReferralCode() {
-    navigator.clipboard.writeText("39owxw");
+function copyReferralCode() {
+  navigator.clipboard.writeText("4JGUC");
 
-    const button = document.querySelector(".copy-button");
-    const original = button.textContent;
-
-    button.textContent = "✅ Copied!";
-
-    setTimeout(() => {
-      button.textContent = original;
-    }, 1500);
+  if (typeof sa_event === "function") {
+    sa_event("Copied Referral Code");
   }
+
+  const button = document.querySelector(".copy-button");
+  const original = button.textContent;
+
+  button.textContent = "✅ Copied!";
+
+  setTimeout(() => {
+    button.textContent = original;
+  }, 1500);
+}
 </script>
   </body>
 </html>
