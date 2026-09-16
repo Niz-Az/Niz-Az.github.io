@@ -600,6 +600,74 @@
         font-size: 1rem;
       }
 
+      .more-referrals-list {
+        max-width: 900px;
+        margin: 1.5rem auto 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 0.85rem;
+      }
+
+      .more-referrals-list a {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 1rem;
+        min-height: 5.5rem;
+        padding: 1.15rem 1.25rem;
+        border: 1px solid #d7eee1;
+        border-left: 3px solid var(--accent-dark);
+        border-radius: 8px;
+        background: #fbfffd;
+        box-shadow: 0 8px 22px rgba(0, 87, 48, 0.07);
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .more-referrals-list a:hover {
+        border-color: #9bd8b5;
+        border-left-color: var(--accent-dark);
+        box-shadow: 0 14px 30px rgba(0, 87, 48, 0.12);
+        text-decoration: none;
+      }
+
+      .more-referrals-list strong {
+        display: block;
+        color: #111827;
+        font-size: 1.05rem;
+      }
+
+      .more-referrals-list .referral-description {
+        display: block;
+        margin-top: 0.15rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+
+      .more-referrals-list .referral-arrow {
+        display: grid;
+        place-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background: var(--accent-soft);
+        color: var(--accent-dark);
+        font-size: 1.35rem;
+        font-weight: 500;
+        line-height: 1;
+      }
+
+      .more-referrals-list a:hover strong {
+        color: #065f46;
+      }
+
+      .more-referrals-list a:hover .referral-arrow {
+        background: var(--accent-dark);
+        color: #ffffff;
+      }
+
       .site-footer {
         margin-top: 4rem;
         padding: 2.25rem 0 3rem;
@@ -969,6 +1037,39 @@
             Sign-up, billing and support all happen on fizz.ca.
           </p>
         </details>
+      </section>
+
+      <section aria-labelledby="more-referrals-heading">
+        <h2 id="more-referrals-heading">More referral codes</h2>
+        <ul class="more-referrals-list">
+          <li>
+            <a href="https://wealthreferral.ca/">
+              <span>
+                <strong>Wealthsimple referral code</strong>
+                <span class="referral-description">Review the code and bonus requirements for a new Wealthsimple account.</span>
+              </span>
+              <span class="referral-arrow" aria-hidden="true">&#8599;</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://eboxreferralcode.com/">
+              <span>
+                <strong>EBOX referral code</strong>
+                <span class="referral-description">See where to enter the code when ordering EBOX Internet.</span>
+              </span>
+              <span class="referral-arrow" aria-hidden="true">&#8599;</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://niz-az.github.io/">
+              <span>
+                <strong>Public Mobile referral code</strong>
+                <span class="referral-description">See the code and how to use it when activating a mobile plan.</span>
+              </span>
+              <span class="referral-arrow" aria-hidden="true">&#8599;</span>
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
 
