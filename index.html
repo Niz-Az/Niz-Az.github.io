@@ -438,6 +438,85 @@ margin-right: auto;
     0 18px 40px rgba(59, 130, 246, 0.32);
 }
 
+  .more-referrals {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .more-referrals-list {
+    max-width: 900px;
+    margin: 1.5rem auto 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .more-referrals-list a {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 1rem;
+    min-height: 5.5rem;
+    padding: 1.15rem 1.25rem;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent-dark);
+    border-radius: 8px;
+    background: var(--card);
+    box-shadow: var(--shadow-soft);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .more-referrals-list a:hover {
+    border-color: rgba(217, 72, 15, 0.35);
+    border-left-color: var(--accent);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.1);
+    text-decoration: none;
+  }
+
+  .more-referrals-list a:focus-visible {
+    outline: 2px solid var(--accent-dark);
+    outline-offset: 3px;
+  }
+
+  .more-referrals-list strong {
+    display: block;
+    color: #111827;
+    font-size: 1.05rem;
+  }
+
+  .more-referrals-list .referral-description {
+    display: block;
+    margin-top: 0.15rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .more-referrals-list .referral-arrow {
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent-dark);
+    font-size: 1.35rem;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  .more-referrals-list a:hover strong {
+    color: var(--accent-dark);
+  }
+
+  .more-referrals-list a:hover .referral-arrow {
+    background: var(--accent-dark);
+    color: #ffffff;
+  }
+
   @media (max-width: 720px) {
     body {
       padding: 0 1rem;
@@ -580,6 +659,39 @@ margin-right: auto;
         <summary><strong>Is the referral code 39owxw still valid?</strong></summary>
         <p>Yes, this Public Mobile promo code is active in 2025 for all new signups.</p>
       </details>
+    </section>
+
+    <section class="more-referrals" aria-labelledby="more-referrals-heading">
+      <h2 id="more-referrals-heading">More Referral Codes</h2>
+      <ul class="more-referrals-list">
+        <li>
+          <a href="https://wealthreferral.ca/">
+            <span>
+              <strong>Wealthsimple referral code</strong>
+              <span class="referral-description">Review the code and bonus requirements for a new Wealthsimple account.</span>
+            </span>
+            <span class="referral-arrow" aria-hidden="true">&#8599;</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://niz-az.github.io/fizz-referral-code.html">
+            <span>
+              <strong>Fizz referral code</strong>
+              <span class="referral-description">Find the code for a new Fizz mobile or Internet plan.</span>
+            </span>
+            <span class="referral-arrow" aria-hidden="true">&#8599;</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://eboxreferralcode.com/">
+            <span>
+              <strong>EBOX referral code</strong>
+              <span class="referral-description">See where to enter the code when ordering EBOX Internet.</span>
+            </span>
+            <span class="referral-arrow" aria-hidden="true">&#8599;</span>
+          </a>
+        </li>
+      </ul>
     </section>
 
     <script>
